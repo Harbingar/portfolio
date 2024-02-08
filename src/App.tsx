@@ -1,10 +1,15 @@
-
-
+import Nav from "./composants/nav";
+import Bar from "./composants/infoBar";
+import Home from "./composants/home";
 function App() {
 
   return (
     <>
-      <h1 className="text-white text-left">Test</h1>
+    <div className="flex flex-row">
+      <Nav/>
+      <Home/>
+      <Bar/>
+    </div>
     </>
   )
 }
