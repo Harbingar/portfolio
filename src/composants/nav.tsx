@@ -4,7 +4,7 @@ import React from 'react';
 const Nav: React.FC = () => {
   return (
     <>
-    <div className="fixed w-1/12 h-screen bg-bestBlack flex flex-col items-center justify-between">
+    <div className="fixed w-1/12 h-screen bg-bestBlack flex flex-col items-center justify-between z-50">
         <div className="w-full h-1/6 flex justify-center items-center">
             <img src="./Tsyben01.png" alt="TSyben" className="w-1/2 h-fit"/>
         </div>
