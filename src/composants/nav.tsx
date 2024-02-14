@@ -6,7 +6,6 @@ const Nav: React.FC = () => {
   return (
     <>
     <div className="fixed hidden md:block w-1/12 h-screen bg-bestBlack flex flex-col items-center justify-between z-50">
-        
         <Link className="w-full h-1/6 flex justify-center items-center" to="/"><img src="./Tsyben01.png" alt="TSyben" className="w-1/2 h-fit"/></Link>
 
         <div className="flex flex-col w-full h-4/6 justify-around">

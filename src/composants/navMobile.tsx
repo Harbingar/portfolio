@@ -11,10 +11,10 @@ const NavMobile: React.FC = () => {
   const menuTranslateClass = isMenuOpen ? 'translate-x-0' : '-translate-x-full';
 
   return (
-    <div className="w-1/2 md:hidden h-screen flex overflow-hidden">
-      <div className="h-screen bg-bestBlack flex flex-col items-center justify-between z-50">
+    <div className="w-20 md:hidden h-screen flex bg-bestBlack">
+      <div className="flex flex-col items-center justify-between z-50">
         <div className="h-full flex flex-col items-center justify-between">
-          <img src="./TS.png" alt="TS" />
+          <Link to="/"><img src="./TS.png" alt="TS" /></Link>
           <img src="./menu.png" alt="Menu" onClick={toggleMenu} className="cursor-pointer" />
           <img className="rotate-45 w-2/3 mb-2" src="deco.png" alt="decoration" />
         </div>

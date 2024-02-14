@@ -6,7 +6,7 @@ const MeMobile: React.FC = () => {
   return (
 
     <>
-    <div className="md:hidden w-max h-screen flex flex-col justify-around items-center">
+    <div className="md:hidden w-fit h-screen flex flex-col justify-around items-center">
         <Switch/>
         <div className="flex flex-col items-center text-bestWhite text-border">
             <h1 className="text-3xl py-2">Thomas Syben</h1>

@@ -8,9 +8,10 @@ const Skills: React.FC = () => {
   return (
     <div className="flex flex-row">
       <Nav/>
+      <NavMobile/>
       <Skill/>
       <Info/>
-      <NavMobile/>
+      
 
     </div>
   );
