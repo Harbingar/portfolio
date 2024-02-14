@@ -5,9 +5,12 @@ const Bar: React.FC = () => {
   return (
 
     <>
-    <div className="fixed top-0 right-0 h-screen w-1/12 bg-bestBlack flex flex-col items-center justify-center z-50">
-        <h1 className="text-xl text-border text-bestWhite rotate-[90deg]">Welcome</h1>
-    </div> 
+    <div className="hidden md:block">
+      <div className="fixed top-0 right-0 h-screen w-1/12 bg-bestBlack flex flex-col items-center justify-center z-50">
+          <h1 className="text-xl text-border text-bestWhite rotate-[90deg]">Welcome</h1>
+      </div> 
+    </div>
+
     </>
   );
 }

@@ -21,5 +21,13 @@ module.exports = {
       };
       addUtilities(newUtilities);
     }),
+    plugin(function({ addUtilities }) {
+      const newUtilities = {
+        '.text-border-high': {
+          textShadow: '0 0 10px #6C6C6C, 0 0 10px #6C6C6C, 0 0 10px #6C6C6C, 0 0 10px #6C6C6C',
+        },
+      };
+      addUtilities(newUtilities);
+    }),
   ],
 };

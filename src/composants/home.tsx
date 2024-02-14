@@ -4,10 +4,13 @@ import Me from "./me";
 
 const Home: React.FC = () => {
     return (
-      <div className="fixed w-full h-screen flex flex-col items-center justify-center overflow-auto overflow-x-hidden">
+      <div className="hidden md:block">
+        <div className="fixed w-full h-screen flex flex-col items-center justify-center overflow-auto overflow-x-hidden">
           <Switch/>
           <Me/>
+        </div>
       </div>
+
     );
   }
   

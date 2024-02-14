@@ -1,15 +1,18 @@
-import Nav from "./composants/nav";
-import Bar from "./composants/infoBar";
-import Home from "./composants/home";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/home';
+
+
+
+
 function App() {
 
   return (
     <>
-    <div className="flex flex-row">
-      <Nav/>
-      <Home/>
-      <Bar/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
     </>
   )
 }
