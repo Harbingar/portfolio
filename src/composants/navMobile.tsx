@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const NavMobile: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,11 +21,11 @@ const NavMobile: React.FC = () => {
       </div>
 
       <div className={`w-3/4 h-screen bg-bestBlack z-40 flex flex-col items-center justify-center ${menuTranslateClass} transition-transform duration-500 ease-in-out fixed`}>
-        <a href="/link1" className="text-border text-2xl text-bestWhite">Works</a>
+        <Link className="text-border text-2xl text-bestWhite" to="/Works">Works</Link>
         <img src="cross.png" alt="Séparateur" className="rotate-90" />
-        <a href="/link2" className="text-border text-2xl text-bestWhite">Skills</a>
+        <Link className="text-border text-2xl text-bestWhite" to="/Skills">Skills</Link>
         <img src="cross.png" alt="Séparateur" className="rotate-90" />
-        <a href="/link3" className="text-border text-2xl text-bestWhite">Contact</a>
+        <Link className="text-border text-2xl text-bestWhite" to="/Contact">Contact</Link>
       </div>
     </div>
   );
