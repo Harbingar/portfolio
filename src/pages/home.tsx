@@ -4,6 +4,7 @@ import Nav from "../composants/nav";
 import Me from "../composants/home";
 import Info from "../composants/infoBar";
 import NavMobile from "../composants/navMobile";
+import MeMobile from "../composants/meMobile";
 
 
 const Home: React.FC = () => {
@@ -13,6 +14,7 @@ const Home: React.FC = () => {
       <Me/>
       <Info/>
       <NavMobile/>
+      <MeMobile/>
     </div>
   );
 }
