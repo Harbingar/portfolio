@@ -1,20 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Nav from "../composants/nav";
 import Info from "../composants/infoBar";
 import NavMobile from "../composants/navMobile";
+import Work from "../composants/work";
 
 
 
-const Home: React.FC = () => {
+const Works: React.FC = () => {
   return (
     <div className="flex flex-row">
       <Nav/>
       <NavMobile/>
-
+      <Work/>
       <Info/>
     </div>
   );
 }
 
-export default Home;
+export default Works;
