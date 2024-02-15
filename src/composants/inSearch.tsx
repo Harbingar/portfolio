@@ -17,7 +17,7 @@ const ToggleSwitch: React.FC = () => {
                 />
                 <label htmlFor="toggle" className="flex items-center cursor-pointer">
                     <div className="relative w-44">
-                        <div className="text-lg text-bestWhite text-border bg-bestDark border-2 border-bestWhite rounded-full shadow-inner flex flex-row items-center justify-around w-full h-10">
+                        <div className="text-lg text-bestGrey text-border bg-bestGrey border-2 border-bestWhite rounded-full shadow-inner flex flex-row items-center justify-around w-full h-10">
                         <p>Yes</p>
                         <p>No</p>
                         </div>

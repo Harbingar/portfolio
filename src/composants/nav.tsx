@@ -9,9 +9,9 @@ const Nav: React.FC = () => {
         <Link className="w-full h-1/6 flex justify-center items-center" to="/"><img src="./Tsyben01.png" alt="TSyben" className="w-1/2 h-fit"/></Link>
 
         <div className="flex flex-col w-full h-4/6 justify-around">
-            <button className="text-border text-xl text-bestWhite rotate-[-90deg] hover:text-border-high"><Link to="/Works">Works</Link></button>
-            <button className="text-border text-xl text-bestWhite rotate-[-90deg] hover:text-border-high"><Link to="/Skills">Skills</Link></button>
-            <button className="text-border text-xl text-bestWhite rotate-[-90deg] hover:text-border-high"><Link to="/Contact">Contact</Link></button>
+            <button className="text-border text-xl text-bestWhite rotate-[-90deg] hover:text-border-high hover:scale-110"><Link to="/Works">Works</Link></button>
+            <button className="text-border text-xl text-bestWhite rotate-[-90deg] hover:text-border-high hover:scale-110"><Link to="/Skills">Skills</Link></button>
+            <button className="text-border text-xl text-bestWhite rotate-[-90deg] hover:text-border-high hover:scale-110"><Link to="/Contact">Contact</Link></button>
         </div>
         <div className="w-full h-1/6 flex justify-center items-center">
             <img src="./deco.png" alt="decoration" className="w-1/3 h-fit rotate-[45deg]" />
