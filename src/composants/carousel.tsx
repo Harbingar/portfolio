@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
 import { worksData } from '../interfaces/worksInterface';
+import { useSharedCarouselState } from './state';
 
 const Carousel: React.FC = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const { currentIndex, setCurrentIndex } = useSharedCarouselState();
 
     const goToPrevious = () => {
         const isFirstItem = currentIndex === 0;
@@ -45,7 +45,7 @@ const Carousel: React.FC = () => {
             <div key={worksData[currentIndex].id} className="w-full h-2/5 flex flex-col items-center justify-between">
               <div className="flex flex-row w-1/2 h-full justify-center">
                 <div className="flex flex-col w-1/2 h-full mr-5">
-                  <a href={worksData[currentIndex].link}><img className="rounded-md border-2 border-gray-500 max-w-full hover:scale-110 transition duration-200" src={worksData[currentIndex].image1} alt="screen"/></a>
+                  <a href={worksData[currentIndex].link}><img className="rounded-md border-2 border-gray-700 max-w-full hover:scale-110 transition duration-200" src={worksData[currentIndex].image1} alt="screen"/></a>
                   <div className="flex flex-col h-full justify-stretch">
                     <div className="flex flex-row items-center justify-between py-2">
                       <h2 className="text-xl font-bold text-border text-bestGrey">Description</h2>
@@ -59,7 +59,7 @@ const Carousel: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex flex-col h-full w-fit items-center justify-center">
-                  <img className="rounded-md border-2 border-gray-500 max-h-full object-contain hover:scale-110 transition duration-200" src={worksData[currentIndex].image2} alt="screen"/>
+                  <img className="rounded-md border-2 border-gray-700 max-h-full object-contain hover:scale-110 transition duration-200" src={worksData[currentIndex].image2} alt="screen"/>
                 </div>
               </div>
             </div>

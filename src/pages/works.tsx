@@ -1,8 +1,8 @@
 import React from 'react';
 import Nav from "../composants/nav";
-import Info from "../composants/infoBar";
+import State from "../composants/infoSlide";
 import NavMobile from "../composants/navMobile";
-import Carousel from "../composants/carousel"; // Modifié ici
+import Carousel from "../composants/carousel";
 
 const Works: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const Works: React.FC = () => {
       <Nav/>
       <NavMobile/>
       <Carousel/>
-      <Info/>
+      <State/>
     </div>
   );
 }
