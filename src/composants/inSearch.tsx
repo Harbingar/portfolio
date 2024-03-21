@@ -17,13 +17,13 @@ const ToggleSwitch: React.FC = () => {
                 />
                 <label htmlFor="toggle" className="flex items-center cursor-pointer">
                     <div className="relative w-44">
-                        <div className="text-lg text-bestGrey text-border bg-bestGrey border-2 border-bestWhite rounded-full shadow-inner flex flex-row items-center justify-around w-full h-10">
+                        <div className="text-lg text-bestGrey text-border bg-bestGrey border-2 border-bestWhite rounded-xl shadow-inner flex flex-row items-center justify-around w-full h-10">
                         <p>Yes</p>
                         <p>No</p>
                         </div>
                         <div 
-                        className={`absolute w-7/12 h-10 bg-bestDark border-2 border-bestWhite rounded-full shadow flex items-center justify-center text-xs font-bold top-0 transition-transform duration-300 ease-in-out`}
-                        style={{ transform: `translateX(${translateValue})` }} // Applique le calcul de translation
+                        className={`absolute w-7/12 h-10 bg-bestDark border-2 border-bestWhite rounded-xl shadow flex items-center justify-center text-xs font-bold top-0 transition-transform duration-300 ease-in-out`}
+                        style={{ transform: `translateX(${translateValue})` }}
                         >
                         <span className={`text-2xl ${isChecked ? 'text-red-500' : 'text-green-400'}`}>
                             {isChecked ? 'No' : 'Yes'}

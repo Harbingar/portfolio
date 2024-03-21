@@ -33,39 +33,39 @@ const Carousel: React.FC = () => {
 
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center text-white overflow-hidden">
-      <div className="absolute top-10 text-center">
-        <div className="flex flex-row justify-center items-center">
-            <p>Statut : </p>
-            <div className={`w-4 h-4 rounded mx-1 ${getStatusColor(worksData[currentIndex].status)}`}></div>
+      <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center pb-5">
+          <div className="flex flex-row justify-center items-center">
+              <p className="text-border text-bestGrey font-bold">Statut : </p>
+              <div className={`w-4 h-4 rounded mx-1 ${getStatusColor(worksData[currentIndex].status)}`}></div>
+          </div>
+          <a href={worksData[currentIndex].link} className="text-5xl font-bold text-border text-bestGrey hover:scale-110 transition duration-200 ease-in-out">{worksData[currentIndex].title}</a>
         </div>
-        <h1 className="text-2xl font-bold text-border text-bestGrey">{worksData[currentIndex].title}</h1>
-      </div>
-      <div className="flex justify-center items-center w-full h-full">
-        <div className="scale-75">
           {worksData.length > 0 && (
-            <div key={worksData[currentIndex].id} className="w-full flex flex-col items-center justify-between">
-              <div className="h-1/2 relative z-10" style={{ transform: 'translateY(10%)' }}>
-                <div className="flex flex-row justify-center">
-                  <img className="w-1/3 rounded-md border-2 border-gray-500 hover:scale-110 transition duration-200" src={worksData[currentIndex].image1} alt="screen" />
-                  <div className="w-1/4 flex flex-col pl-3">
-                    <h1 className="font-bold text-xl">Description</h1>
-                    <p>{worksData[currentIndex].description}</p>
+            <div key={worksData[currentIndex].id} className="w-full h-2/5 flex flex-col items-center justify-between">
+              <div className="flex flex-row w-1/2 h-full justify-center">
+                <div className="flex flex-col w-1/2 h-full mr-5">
+                  <a href={worksData[currentIndex].link}><img className="rounded-md border-2 border-gray-500 max-w-full hover:scale-110 transition duration-200" src={worksData[currentIndex].image1} alt="screen"/></a>
+                  <div className="flex flex-col h-full justify-stretch">
+                    <div className="flex flex-row items-center justify-between py-2">
+                      <h2 className="text-xl font-bold text-border text-bestGrey">Description</h2>
+                      <div className="flex flex-row h-8">
+                        <img className="px-1" src="react.png" alt="react" />
+                        <img className="px-1" src="tailwind.png" alt="tailwind" />
+                        <img className="px-1" src="typescript.png" alt="typescript" />
+                      </div>
+                    </div>
+                    <p className="text-xs">{worksData[currentIndex].description}</p>
                   </div>
                 </div>
-              </div>
-              <div className="h-1/2 relative hover:z-20" style={{ transform: 'translateY(-10%)' }}>
-                <div className="flex flex-row justify-center">
-                    <div className="w-1/3 flex flex-col justify-center items-center relative" style={{ transform: 'translateY(10%) translateX(5%)' }}>
-                        <a className="border-2 rounded px-3 py-1 text-xl text-bestWhite border-bestWhite hover:underline hover:border-none hover:scale-110 transition duration-200 ease-in-out" href={worksData[currentIndex].link}>Visit Now</a>
-                    </div> 
-                    <img className="w-1/3 rounded-md border-2 border-gray-500 hover:scale-110 transition duration-200" src={worksData[currentIndex].image2} alt="screen" />
+                <div className="flex flex-col h-full w-fit items-center justify-center">
+                  <img className="rounded-md border-2 border-gray-500 max-h-full object-contain hover:scale-110 transition duration-200" src={worksData[currentIndex].image2} alt="screen"/>
                 </div>
               </div>
             </div>
           )}
-        </div>
       </div>
-
+      
       <div className="absolute bottom-5 flex items-center justify-center w-full px-4">
         <div className="flex items-center justify-between w-full max-w-screen-md">
           <button onClick={goToPrevious} className="z-10">←</button>
